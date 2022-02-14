@@ -9,7 +9,7 @@ const client = new Client();
 
 async function getUserInfos(userId: string) {
     try {
-        const result = await axios.get(`https://discord.com/api/v8/users/${userId}`, {
+        const result = await axios.get(`https://discord.com/api/v10/users/${userId}`, {
             headers: {
                 'authorization' : `Bot ${process.env.BOT_TOKEN}`,
                 'Content-Type' : 'application/json'
